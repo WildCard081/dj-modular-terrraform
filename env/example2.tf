@@ -87,6 +87,23 @@ variable "public_subnets" {
       "vpc" =  "QA" # this must the same as VPC key
       "default_destination_cidr_block" = "0.0.0.0/0"    
     },
+    "MODULAR-DEMO-PUBLIC-SUBNET-1"  = {
+      "name"     = "MODULAR-DEMO-PUBLIC-SUBNET-1"
+      "description"    = "CIDR for the DEMO Public 1 subnet"
+      "cidr"  = "10.2.0.0/24"
+      "availability_zone"  = "<YOUR AWS REGION>"
+      "vpc" =  "DEMO" # this must the same as VPC key
+      "default_destination_cidr_block" = "0.0.0.0/0"
+    },
+    "MODULAR-DEMO-PUBLIC-SUBNET-2"  = {
+      "name"     = "DEMO-PUBLIC-SUBNET-2"
+      "description"    = "CIDR for the DEMO Public 2 subnet"
+      "cidr"  = "10.2.1.0/24"
+      "name"     = "MODULAR-DEMO-PUBLIC-SUBNET-2"
+      "availability_zone"  = "<YOUR AWS REGION>"   
+      "vpc" =  "DEMO" # this must the same as VPC key
+      "default_destination_cidr_block" = "0.0.0.0/0"    
+    },
   }
 }
 
@@ -117,6 +134,20 @@ variable "private_subnets" {
       "name"     = "MODULAR-QA-PRIVATE-SUBNET-3"     
       "availability_zone"  = "<YOUR AWS REGION>"
       "vpc" =  "QA" # this must be the same as VPC key
+    },
+    "MODULAR-DEMO-PRIVATE-SUBNET-1"  = {
+      "description"    = "CIDR for the DEMO Private 1 subnet"
+      "cidr"  = "10.2.3.0/24"
+      "name"     = "MODULAR-DEMO-PRIVATE-SUBNET-1"
+      "availability_zone"  = "<YOUR AWS REGION>"
+      "vpc" =  "DEMO" # this must the same as VPC key
+    },
+    "MODULAR-DEMO-PRIVATE-SUBNET-2"  = {
+      "description"    = "CIDR for the DEMO Private 2 subnet"
+      "cidr"  = "10.2.4.0/24"
+      "name"     = "MODULAR-DEMO-PRIVATE-SUBNET-2"     
+      "availability_zone"  = "<YOUR AWS REGION>"
+      "vpc" =  "DEMO" # this must be the same as VPC key
     },
   }
 }
