@@ -31,8 +31,8 @@ provider "aws" {
 terraform {
     backend "s3" {
         bucket = "modular-terraform-bucket"
-        key = modular-terraform-state-example1"
-        region = "<YOUR AWS REGION>"
+        key = "modular-terraform-state-example1"
+        region = "us-east-1"
         encrypt = true
     }
 }
